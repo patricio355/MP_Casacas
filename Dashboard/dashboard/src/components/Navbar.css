@@ -1,0 +1,29 @@
+.navbar{
+    background-color: rgb(45, 109, 53);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
+}
+
+
+.link {
+    font-size: 20px;
+    font-weight: bold;
+    color: white; /* o el color que quieras */
+    text-decoration: none; /* quita el subrayado */
+    padding-left: 30px;
+  }
+  
+  .link a {
+    color: rgb(255, 255, 255); /* asegura que el <Link> tenga color blanco */
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  .link a:hover {
+    text-decoration:aqua;
+    color: aquamarine;
+  }

@@ -1,0 +1,139 @@
+/* Estilos para las imágenes principales */
+.imgpc,
+.imgmobile {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.imgpc img,
+.imgmobile img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imgpc {
+  display: block;
+}
+
+.imgmobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .imgpc {
+    display: none;
+  }
+
+  .imgmobile {
+    display: block;
+  }
+}
+
+/* Swiper */
+.swiper {
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tarjeta general */
+.card,
+.cardh {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover,
+.cardh:hover {
+  transform: translateY(-5px);
+}
+
+.card img,
+.cardh img {
+  width: 100%;
+  height: auto;
+}
+
+.detalle {
+  padding: 10px;
+}
+
+.currentPrice {
+  font-weight: bold;
+  color: #e91e63;
+  margin: 5px 0;
+}
+
+.estrellas {
+  margin-top: 8px;
+}
+
+.estrellas .ima {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.estrellas img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Botones de navegación del swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000;
+}
+
+/* Línea divisora */
+.cen {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+/* Subtítulo */
+.subtitulo {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0 20px 0;
+  font-weight: 600;
+}
+
+/* Contenedor de productos en la parte inferior */
+.containerHomeCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+/* Estilos específicos para .cardh (reutilizados de .card) */
+.cardh .currentPrice {
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 5px;
+}
